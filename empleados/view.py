@@ -15,6 +15,16 @@ def usuarios():
     return json.dumps(query_result)
 
 
+def usuario():
+    name = request.json["name"]
+    password = request.json["password"]
+    cursor = DATA_PROVIDER.conn.cursor()
+    cursor.execute(generateSELECT(TABLE, None, True, " {0} {1} = '{2}' and {3} = '{4}'".format(WHERE, NOMBRE, name, CLAVE, password)))
+    query_result = [dict(line) for line in
+                    [zip([column[0] for column in cursor.description], row) for row in cursor.fetchall()]]
+    return json.dumps(query_result)
+
+
 def usuarioscreate():
     try:
         id = generateUnicId(11)

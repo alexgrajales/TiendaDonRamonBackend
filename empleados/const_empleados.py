@@ -6,3 +6,5 @@ INSERTEMPLEADOS = "INSERT INTO Empleados (Codigo, Nombre, CCosto, Clave) VALUES 
 TABLE = "Empleados"
 COLUMS = "(Codigo, Nombre, CCosto, Clave)"
 CODIGO = "Codigo"
+NOMBRE = "Nombre"
+CLAVE = "Clave"
