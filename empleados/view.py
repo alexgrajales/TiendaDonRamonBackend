@@ -1,11 +1,12 @@
-from middleware import DATA_PROVIDER
-from const_empleados import *
-from const import *
 import json
-import MySQLdb
+
 from flask import request
+
+from const import *
+from const_empleados import *
+from middleware import DATA_PROVIDER
 from utilidades.SQL import *
-import utilidades.Const
+
 
 def usuarios():
     cursor = DATA_PROVIDER.conn.cursor()
