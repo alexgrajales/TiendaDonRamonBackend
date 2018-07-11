@@ -1,0 +1,10 @@
+SELECTCLIENTE = "SELECT * FROM clientes"
+CODIGOCLIENTE = 'Codigo Cliente'
+SELECTMONTAJES = "SELECT * FROM montajes"
+SELECTEMPLEADOS = "SELECT * FROM Empleados"
+INSERTEMPLEADOS = "INSERT INTO Empleados (Codigo, Nombre, CCosto, Clave) VALUES ("
+TABLE = "Movimiento"
+COLUMS = "(Empleado, Producto, Cantidad, Valor, Fecha_Item, Fecha_Pago, Valor_Total, Valor_Pago, Saldo, Filler)"
+CODIGO = "Codigo"
+EMPLEADO = "Empleado"
+CLAVE = "Clave"
